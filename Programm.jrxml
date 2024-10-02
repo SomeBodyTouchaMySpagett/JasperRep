@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.2.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Programm" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f6838d9d-12d8-4a71-a243-cd3d557d7b15">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ConsultationDTO.xml"/>
+	<queryString language="json">
+		<![CDATA[consultation.programm]]>
+	</queryString>
+	<field name="npa" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="npa"/>
+		<fieldDescription><![CDATA[npa]]></fieldDescription>
+	</field>
+	<field name="goal" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="goal"/>
+		<fieldDescription><![CDATA[goal]]></fieldDescription>
+	</field>
+	<field name="rate" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="rate"/>
+		<fieldDescription><![CDATA[rate]]></fieldDescription>
+	</field>
+	<field name="period" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="period"/>
+		<fieldDescription><![CDATA[period]]></fieldDescription>
+	</field>
+	<field name="amount" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="amount"/>
+		<fieldDescription><![CDATA[amount]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="status"/>
+		<fieldDescription><![CDATA[status]]></fieldDescription>
+	</field>
+	<field name="type" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="type"/>
+		<fieldDescription><![CDATA[type]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="222" splitType="Stretch">
+			<frame>
+				<reportElement positionType="Float" x="0" y="42" width="400" height="30" uuid="cbc634fe-512f-4a92-bbc4-e0999d2580e6">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textField isStretchWithOverflow="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="169" y="0" width="231" height="30" uuid="7332a604-c586-4805-801b-19116c05bf9b">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans"/>
+						<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{goal}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="169" height="30" uuid="15b1339f-3ec8-422d-824f-db45d5f75eae"/>
+					<textElement>
+						<font fontName="DejaVu Sans" isItalic="true"/>
+					</textElement>
+					<text><![CDATA[Целевое назначение:]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="72" width="400" height="30" uuid="a10a48f5-5b11-4990-9736-f6ec12ef340a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textField isStretchWithOverflow="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="169" y="0" width="231" height="30" uuid="17432ed4-dedb-4ad6-8f5b-932e81ffa447">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans"/>
+						<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{rate}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="169" height="30" uuid="7653474a-993e-411a-9725-6e361d3c8d0d"/>
+					<textElement>
+						<font fontName="DejaVu Sans" isItalic="true"/>
+					</textElement>
+					<text><![CDATA[Ставка:]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="102" width="400" height="30" uuid="0ef22454-fabf-4d5f-9daa-b015133442a7">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textField isStretchWithOverflow="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="169" y="0" width="231" height="30" uuid="6532eee6-4043-4abe-8a5f-c34c4bff2800">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans"/>
+						<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{period}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="169" height="30" uuid="4182e331-0dc4-4ad5-83e0-a6a45a84b4e2"/>
+					<textElement>
+						<font fontName="DejaVu Sans" isItalic="true"/>
+					</textElement>
+					<text><![CDATA[Срок:]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="132" width="400" height="30" uuid="1e8a59b5-2769-445e-9e1c-0cc3c99d2a97">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textField isStretchWithOverflow="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="169" y="0" width="231" height="30" uuid="d5ea4e17-a40e-4955-84ac-f9cd66963dea">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans"/>
+						<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="169" height="30" uuid="b30127ec-427e-4d3d-a336-51903383d0e4"/>
+					<textElement>
+						<font fontName="DejaVu Sans" isItalic="true"/>
+					</textElement>
+					<text><![CDATA[Сумма:]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="162" width="400" height="30" uuid="31e36fa0-ea83-4591-9fa0-9c3afedd19de">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textField isStretchWithOverflow="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="169" y="-1" width="231" height="30" uuid="97fd58e4-8fd4-4b33-86ec-308c6d7bf4d2">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans"/>
+						<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="169" height="30" uuid="3ab3b0c2-9327-4242-89a0-9c64851974a7"/>
+					<textElement>
+						<font fontName="DejaVu Sans" isItalic="true"/>
+					</textElement>
+					<text><![CDATA[Статус:]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="192" width="400" height="30" uuid="2a592d05-d0d7-4086-86ca-36626de38d97">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textField isStretchWithOverflow="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="169" y="0" width="231" height="30" uuid="7fe8d1b4-a848-489a-8108-b6b9519b066a">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="DejaVu Sans"/>
+						<paragraph lineSpacing="1_1_2" lineSpacingSize="1.0"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{type}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="169" height="30" uuid="bbc57553-bc6c-499a-ada7-2e4daafa4763"/>
+					<textElement>
+						<font fontName="DejaVu Sans" isItalic="true"/>
+					</textElement>
+					<text><![CDATA[Тип:]]></text>
+				</staticText>
+			</frame>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="400" height="30" uuid="7658a033-d4ba-47fb-a77a-1d37ae0619f4">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{npa}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
