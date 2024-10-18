@@ -155,7 +155,7 @@
 							</staticText>
 						</jr:columnHeader>
 						<jr:detailCell style="Table_TD" height="30">
-							<textField isStretchWithOverflow="true">
+							<textField>
 								<reportElement x="0" y="0" width="330" height="30" uuid="817c1d0a-473c-4d79-8385-f7c5b4ebeed6"/>
 								<textElement>
 									<font fontName="DejaVu Sans"/>
@@ -175,7 +175,7 @@
 							</staticText>
 						</jr:columnHeader>
 						<jr:detailCell style="Table_TD" height="30">
-							<textField isStretchWithOverflow="true">
+							<textField>
 								<reportElement x="0" y="0" width="204" height="30" uuid="21e700d6-0b26-450a-8f27-137647c9cc92"/>
 								<textElement>
 									<font fontName="DejaVu Sans"/>
